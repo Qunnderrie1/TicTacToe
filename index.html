@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Alata&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+
+
+<!-- Once the game first launch This Container will appear -->
+    <div class="startGameContainer">
+        <div class="gameBox">
+            <p  style="font-size: 12px" class="modeText">You have choosen Single Player Mode</p>
+            <label for="player">Player 1: X</label>
+            <input type="text" class="form-control player1Name" placeholder="Enter your name">
+            <div class="player2OptionalContainer">
+                <label style="margin-Top: 20px" for="player">Player 2: O</label>
+                <input type="text" class="form-control player2Name" placeholder="Enter your name">
+            </div>
+            <button class="btn btn-primary startBtn">Start Game</button>
+        </div>
+    </div>
+
+    <!-- This Container will be updated with Single Player Mode vs Computer (AI)-->
+
+    <!-- <div class="playerContainer container-fluid">
+        <div class="gameBox">
+            <p class="playerText">Player Options</p>
+            <div class="playerOptionsContainer container">
+                <select name="playerMode" class="form-select playerOptionsMenu">
+                    <option value="singlePlayer " >Single Player</option>
+                    <option value="multiplayer" selected >Multiplayer</option>
+                </select>
+            </div>
+            <button class="btn btn-primary nextBtn">Next</button>
+        </div>
+    </div> -->
+
+     <!-- This Container will be updated with Single Player Mode vs Computer (AI)-->
+
+     <!-- This Container will be displayed once a player wins-->
+    <div class="winnerBox">
+        <div class="gameBox">
+            <p class="playerWinText"></p>
+            <button class="btn btn-primary reStartGameBtn">Restart Game</button>
+        </div>
+    </div>
+
+
+  <!-- This Container will be updated with Single Player Mode vs Computer (AI)-->
+
+    <!-- <div class="reviewContainer">
+        <div class="reviewBox">
+            <div class="headerReviewContainer">
+                <h3 style="text-align:center ;">Player Review</h3>
+            </div>
+            <div class="reviewTextContainer">
+                <p class="player1">Player One : Qunnderrie Snelling</p>
+                <p class="textChoice">O</p>
+                <p class="player2">Player Two  : Qunnderrie Snelling</p>
+                <p class="textChoice">X</p>
+            </div>
+            <button class="btn btn-primary reStartGameBtn">Start Game</button>
+        </div>
+    </div> -->
+
+  <!-- This Container will be updated with Single Player Mode vs Computer (AI)-->
+
+
+
+    <!-- This Container are the tiles for the Game UI-->
+
+    <div class="mainContainer">
+        <h1>Tic Tac Toe</h1>
+    <div class="gameContainer">
+            <div data-index="1" class="tile btn1"></div>
+            <div data-index="2" class="tile btn2"></div>
+            <div data-index="3" class="tile btn3"></div>
+            <div data-index="4" class="tile btn4"></div>
+            <div data-index="5" class="tile btn5"></div>
+            <div data-index="6" class="tile btn6"></div>
+            <div data-index="7" class="tile btn7"></div>
+            <div data-index="8" class="tile btn8"></div>
+            <div data-index="9" class="tile btn9"></div>
+        </div>
+    </div>
+
+</div>
+
+
+<script type="module" src="./index.js"></script>
+    
+</body>
+</html>
