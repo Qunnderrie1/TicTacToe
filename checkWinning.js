@@ -21,10 +21,10 @@ function checkWinning() {
       if (tileValue1 != null && tileValue1 === tileValue2 && tileValue1 === tileValue3) {
   
         if(playerTurn == 0){
-          playerWinText.textContent = players[1].name;
+          playerWinText.textContent =` ${players[1].name} Wins!!`;
           winnerBox.style.visibility = "visible";
         }else{
-          playerWinText.textContent = players[0].name;
+          playerWinText.textContent = ` ${players[0].name} Wins!!`;
           winnerBox.style.visibility = "visible";
         }
       }
