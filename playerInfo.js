@@ -10,6 +10,7 @@ const playerWinText = document.querySelector(".playerWinText");
 const winnerBox = document.querySelector(".winnerBox");
 const tiles = document.querySelectorAll(".tile");
 
+
 // players array object to stored players in the players array
 let players = [];
 
@@ -24,25 +25,21 @@ function playerInfo() {
     let gamePlayer2 = new player(player2Name.value , 'O')
   
 
-    if(players.length == 0 && player1Name){
-      players.push(gamePlayer1);
-      players.push(gamePlayer2);
-      startGameContainer.style.visibility = "hidden"
-      console.log("Starting game....")
-  
+    if(!player1Name.value || !player2Name.value){
+      alert("Please enter in all values")
+      console.log("Error")
+    }else{
+        players.push(gamePlayer1);
+        players.push(gamePlayer2);
+        startGameContainer.style.visibility = "hidden"
+        console.log("No Error")
     }
-    if(players.length == 1 && player1Name.value && player2Name.value){
-      players.push(gamePlayer1);
-      players.push(gamePlayer2);
-      player1Name.value = "";
-      player2Name.value = "";
-    }
-  
-  
+    console.log(players)
+
     // Input Only 2 players in the array
-    if (players.length == 1) {
-      startGameContainer.style.visibility = "hidden";
-    }
+    // if (players.length == 1) {
+    //   startGameContainer.style.visibility = "hidden";
+    // }
   }
 
 

@@ -21,7 +21,7 @@ body{
 }
 h1{
     margin-bottom: 100px;
-    font-family: 'Caveat', cursive;
+    font-family: 'Alfa Slab One', cursive;
     font-size: 40px;
     color: #fff;
 }
@@ -87,10 +87,14 @@ p {
 .gameBox{
     border-radius: 5px;
     background-color: white;
-    padding: 40px;
-    width: 300px;
+    width: 400px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+}
+h4{
+    text-align: center;
+
 }
 .startGameContainer {
     visibility: hidden;
